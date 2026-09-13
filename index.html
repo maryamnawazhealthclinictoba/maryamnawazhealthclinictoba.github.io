@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#075b43">
+<title>Maryam Nawaz Health Clinic, Toba</title>
+<style>
+:root{--g:#075b43;--g2:#0b8061;--p:#eef8f4;--gold:#c9a227;--ink:#173a30;--muted:#66766f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f8f7;color:var(--ink);font-family:"Noto Nastaliq Urdu","Noto Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.9}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+.top{background:#063f30;color:#fff;font-size:12px}.top .wrap{display:flex;justify-content:space-between;padding:5px 0}
+header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 3px 18px #0001}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:10px;align-items:center}.seal{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--g);color:white;border:4px solid #d9eee8;font-size:27px}.brand h1{font-size:17px;line-height:1.2;color:var(--g);margin:0}.brand small{font-size:9px;color:#728079}.menu{display:flex;gap:16px;font-size:13px}.menu a:hover{color:var(--g2)}.hamb{display:none;border:0;background:var(--g);color:white;border-radius:8px;padding:7px 12px;font-size:20px}
+.hero{background:linear-gradient(135deg,#054735,#08765a 65%,#0a916d);color:white;overflow:hidden}.heroGrid{min-height:500px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:45px 0}.badge{border:1px solid #ffffff55;background:#ffffff16;border-radius:30px;padding:3px 13px;font-size:12px}.hero h2{font-size:37px;line-height:1.35;margin:13px 0 8px}.hero p{font-size:16px;max-width:680px}.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{padding:9px 18px;border-radius:8px;font-size:13px;font-weight:bold}.white{background:#fff;color:var(--g)}.outline{border:1px solid white;color:white}
+.visual{position:relative}.clinicSvg{width:100%;max-width:520px;display:block;margin:auto;filter:drop-shadow(0 20px 25px #003a2d55)}.heroInfo{position:absolute;bottom:15px;right:8%;background:white;color:var(--ink);padding:13px 17px;border-radius:13px;box-shadow:0 10px 25px #003d2d45;font-size:13px}.notice{background:#fff;color:var(--ink);border-right:5px solid var(--gold);border-radius:8px;padding:9px 13px;margin-top:20px;font-size:13px}
+section{padding:52px 0}.green{background:var(--p)}.title{text-align:center;margin-bottom:28px}.title span{font-size:10px;color:var(--g2);font-weight:bold}.title h2{font-size:27px;color:var(--g);margin:2px 0}.title p{margin:0;color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#fff;border:1px solid #dfebe7;border-radius:15px;padding:20px;box-shadow:0 5px 18px #00000009}.icon{width:49px;height:49px;border-radius:13px;background:#e3f3ee;display:grid;place-items:center;font-size:23px;margin-bottom:7px}.card h3{font-size:17px;color:#174a3c;margin:0 0 4px}.card p{font-size:13px;color:var(--muted);margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:#fff;border:1px solid #dfebe7;border-radius:15px;padding:22px}.panel h3{color:var(--g);margin-top:0}.panel p,.panel li{font-size:13px;color:#60716a}.panel ul{padding-right:20px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.stat{background:#fff;border:1px solid #dfeae6;border-radius:12px;text-align:center;padding:14px}.stat b{display:block;color:var(--g);font-size:25px}.stat span{font-size:12px;color:var(--muted)}
+.vax{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:13px}.vax th{background:var(--g);color:#fff;padding:9px}.vax td{padding:8px;border-bottom:1px solid #e6efec;text-align:center}.vax tr:last-child td{border:0}
+.campaign{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:center}.campaign img{width:100%;border-radius:16px;background:#e7f5f0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery figure{margin:0;background:#fff;border:1px solid #dfebe7;border-radius:13px;overflow:hidden}.gallery svg{width:100%;display:block}.gallery figcaption{padding:7px 10px;font-size:12px;color:var(--g)}
+.faq details{background:#fff;border:1px solid #dfeae6;border-radius:10px;margin:8px 0;padding:9px 14px}.faq summary{cursor:pointer;color:var(--g);font-weight:bold;font-size:14px}.faq p{font-size:13px;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contactBox{background:#fff;border:1px solid #dfebe7;border-radius:15px;padding:22px}.row{padding:9px 0;border-bottom:1px solid #edf2f0;font-size:13px}.row:last-child{border:0}.row b{color:var(--g)}.map{height:260px;border-radius:14px;background:#e5f3ee;display:grid;place-items:center;text-align:center;color:var(--g);border:1px dashed #8dbdaf}.map a{background:var(--g);color:#fff;padding:7px 13px;border-radius:7px;font-size:12px}
+.cta{background:var(--g);color:white;padding:33px 0}.cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{margin:0;font-size:23px}.wa{background:white;color:var(--g);padding:9px 17px;border-radius:8px;font-weight:bold;font-size:13px}
+footer{background:#063d30;color:#c9ddd7;padding:35px 0 14px}.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:22px}.foot h3{color:#fff;font-size:16px}.foot p,.foot li{font-size:12px}.foot ul{list-style:none;padding:0}.copy{text-align:center;border-top:1px solid #ffffff18;padding-top:12px;margin-top:20px;font-size:11px}
+@media(max-width:850px){.menu{display:none;position:absolute;top:76px;right:0;left:0;background:#fff;padding:10px 5%;box-shadow:0 8px 18px #0002;flex-direction:column;gap:3px}.menu.open{display:flex}.hamb{display:block}.heroGrid,.two,.campaign,.contact{grid-template-columns:1fr}.heroGrid{padding:35px 0}.hero h2{font-size:29px}.cards{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.top .wrap{font-size:10px}.brand h1{font-size:14px}.brand small{font-size:7px}.seal{width:44px;height:44px;font-size:22px}.cards,.stats,.gallery,.foot{grid-template-columns:1fr}.heroInfo{position:relative;bottom:auto;right:auto;margin-top:-25px}.title h2{font-size:23px}section{padding:38px 0}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>صحت • خدمت • سہولت</span><span>Public Health Information Portal</span></div></div>
+<header><nav class="wrap nav">
+<a class="brand" href="#home"><div class="seal">✚</div><div><h1>Maryam Nawaz Health Clinic, Toba</h1><small>VOP Toba • Tehsil Pind Dadan Khan • District Jhelum</small></div></a>
+<button class="hamb" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+<div class="menu"><a href="#home">ہوم</a><a href="#about">تعارف</a><a href="#services">خدمات</a><a href="#epi">ویکسینیشن</a><a href="#health">صحت آگاہی</a><a href="#gallery">گیلری</a><a href="#faq">FAQs</a><a href="#contact">رابطہ</a></div>
+</nav></header>
+
+<main id="home">
+<section class="hero"><div class="wrap heroGrid"><div>
+<span class="badge">عوام کے لیے صحت معلوماتی پورٹل</span>
+<h2>مریم نواز ہیلتھ کلینک، ٹوبہ</h2>
+<p>بنیادی صحت، OPD، ویکسینیشن، ماں اور بچے کی صحت، گائنی، الٹراساؤنڈ اور صحت آگاہی سے متعلق معلومات ایک جگہ۔</p>
+<div class="btns"><a class="btn white" href="#services">خدمات دیکھیں</a><a class="btn outline" href="https://wa.me/923369025983?text=Assalam-o-Alaikum%2C%20mujhe%20Maryam%20Nawaz%20Health%20Clinic%20Toba%20mein%20appointment%20chahiye." target="_blank" rel="noopener">WhatsApp / Appointment</a></div>
+<div style="margin-top:18px;background:#ffffff18;border:1px solid #ffffff55;border-radius:12px;padding:12px 15px;font-size:14px;display:flex;gap:22px;flex-wrap:wrap;align-items:center"><span>👨‍⚕️ <b>Dr. Kartic:</b> <a href="tel:03075773355">0307 5773355</a></span><span>💉 <b>Saqib Vaccinator:</b> <a href="tel:03369025983">0336 9025983</a></span></div>
+<div class="notice">📢 <b>اہم اطلاع:</b> ویکسینیشن کے لیے بچے کا کارڈ ساتھ لائیں۔ ہر ہفتہ ہفتہ کو خصوصی Vaccination Campaign۔</div>
+</div>
+<div class="visual">
+<!-- Embedded SVG illustration: no external image required -->
+<svg class="clinicSvg" viewBox="0 0 620 450" xmlns="http://www.w3.org/2000/svg" aria-label="Clinic illustration">
+<rect width="620" height="450" rx="30" fill="#dff3ed"/><circle cx="520" cy="80" r="55" fill="#bfe7dc"/>
+<rect x="90" y="120" width="440" height="270" rx="8" fill="#fff"/><path d="M65 125L310 45l245 80z" fill="#0b7658"/><rect x="275" y="65" width="70" height="55" rx="8" fill="#fff"/>
+<rect x="105" y="155" width="105" height="80" rx="7" fill="#d8eee8"/><rect x="390" y="155" width="105" height="80" rx="7" fill="#d8eee8"/>
+<rect x="255" y="220" width="110" height="170" rx="8" fill="#e9f6f2"/><rect x="276" y="250" width="68" height="140" rx="5" fill="#0b7658"/>
+<rect x="245" y="145" width="130" height="52" rx="8" fill="#075b43"/><text x="310" y="178" fill="#fff" font-size="17" text-anchor="middle" font-family="Arial">HEALTH CLINIC</text>
+<circle cx="158" cy="196" r="15" fill="#0b7658"/><path d="M145 210h26v13h-26z" fill="#0b7658"/><circle cx="443" cy="196" r="15" fill="#0b7658"/><path d="M430 210h26v13h-26z" fill="#0b7658"/>
+<circle cx="310" cy="92" r="18" fill="#c9a227"/><path d="M300 92h20M310 82v20" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+<rect x="70" y="390" width="480" height="14" rx="7" fill="#b4ddd2"/>
+</svg>
+<div class="heroInfo">🏥 <b>خدمتِ خلق</b> — بنیادی صحت اور ویکسینیشن</div>
+</div></div></section>
+
+<section id="about"><div class="wrap">
+<div class="title"><span>ABOUT THE CLINIC</span><h2>کلینک کا تعارف</h2><p>عوام کے لیے بنیادی صحت کی خدمات اور صحت سے متعلق رہنمائی</p></div>
+<div class="two"><div class="panel"><h3>🏥 ہمارا مقصد</h3><p>یہ Public Information Portal عوام کو کلینک کی خدمات، اوقات، ویکسینیشن اور صحت آگاہی کی معلومات آسان انداز میں فراہم کرنے کے لیے بنایا گیا ہے۔</p><p>بروقت طبی مشورہ، حفاظتی ٹیکہ جات اور ماں و بچے کی صحت کے بارے میں درست رہنمائی صحت مند معاشرے کی بنیاد ہے۔</p></div>
+<div class="panel"><h3>📍 مقام اور اوقات</h3><p><b>VOP Toba, Tehsil Pind Dadan Khan, District Jhelum</b></p><p>OPD: <b>Monday–Saturday, 8:00 AM–2:00 PM</b><br>Sunday: Off</p><p>Vaccination: <b>Working Days</b><br>Special Campaign: <b>Every Saturday</b></p></div></div>
+<div class="stats"><div class="stat"><b>6</b><span>Working Days / Week</span></div><div class="stat"><b>8–2</b><span>OPD Timing</span></div><div class="stat"><b>7/7</b><span>Gynae / Ultrasound / Delivery*</span></div><div class="stat"><b>Sat</b><span>Vaccination Campaign</span></div></div>
+<p style="font-size:10px;color:#777;margin-top:8px">*اس سروس کی 24/7 دستیابی کلینک کی انتظامی تصدیق کے مطابق ویب سائٹ پر حتمی کی جائے گی۔</p>
+</div></section>
+
+<section id="services" class="green"><div class="wrap"><div class="title"><span>HEALTH SERVICES</span><h2>ہماری خدمات</h2><p>اہم بنیادی صحت کی سہولیات</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🩺</div><h3>OPD / General Checkup</h3><p>عام بیماریوں کا معائنہ، ابتدائی طبی رہنمائی اور ضرورت کے مطابق referral guidance۔</p></div>
+<div class="card"><div class="icon">💉</div><h3>EPI Vaccination</h3><p>حفاظتی ٹیکہ جات، ویکسینیشن کارڈ رہنمائی اور مقررہ شیڈول کے مطابق vaccination information۔</p></div>
+<div class="card"><div class="icon">🤰</div><h3>Gynae & Women Health</h3><p>خواتین کی صحت، pregnancy care اور متعلقہ طبی رہنمائی کے بارے میں معلومات۔</p></div>
+<div class="card"><div class="icon">🔊</div><h3>Ultrasound</h3><p>الٹراساؤنڈ سروس سے متعلق کلینک کی دستیابی اور appointment information۔</p></div>
+<div class="card"><div class="icon">👶</div><h3>Mother & Child Health</h3><p>حمل، زچگی، نومولود اور بچوں کی صحت سے متعلق بنیادی رہنمائی۔</p></div>
+<div class="card"><div class="icon">🥗</div><h3>Nutrition</h3><p>متوازن غذا، بچوں کی غذائیت اور صحت مند طرز زندگی سے متعلق آگاہی۔</p></div>
+<div class="card"><div class="icon">🧪</div><h3>Health Screening</h3><p>ضروری screening اور صحت کے خطرات کے بارے میں عمومی معلومات اور referral guidance۔</p></div>
+<div class="card"><div class="icon">🫁</div><h3>TB Awareness</h3><p>TB کی علامات، بروقت تشخیص اور علاج کے لیے متعلقہ صحت مرکز سے رابطے کی رہنمائی۔</p></div>
+<div class="card"><div class="icon">📚</div><h3>Health Education</h3><p>صفائی، غذائیت، بیماریوں سے بچاؤ اور خاندان کی صحت کے بارے میں آگاہی۔</p></div>
+</div></div></section>
+
+<section id="epi"><div class="wrap"><div class="title"><span>EPI VACCINATION</span><h2>حفاظتی ٹیکہ جات</h2><p>سرکاری EPI شیڈول کے مطابق بچوں کی ویکسینیشن بروقت مکمل کریں</p></div>
+<div class="two"><div class="panel"><h3>💉 ویکسینیشن کی اہم ہدایات</h3><ul>
+<li>بچے کا Vaccination Card ہر visit پر ساتھ لائیں۔</li><li>مقررہ تاریخ پر ویکسین لگوانے کی کوشش کریں۔</li><li>اگر کوئی dose رہ جائے تو جلد از جلد EPI مرکز سے رابطہ کریں۔</li><li>ویکسینیشن کے بعد عملے کی دی گئی ہدایات پر عمل کریں۔</li><li>ہفتہ کے دن خصوصی Vaccination Campaign کے بارے میں تازہ اعلان دیکھیں۔</li>
+</ul></div>
+<div class="panel"><h3>📅 Government EPI Schedule — Reference</h3>
+<table class="vax"><tr><th>عمر</th><th>اہم ویکسین</th></tr>
+<tr><td>پیدائش</td><td>BCG, OPV-0, Hep-B (جہاں پروگرام کے مطابق)</td></tr>
+<tr><td>6 ہفتے</td><td>OPV, Penta, PCV, Rota</td></tr>
+<tr><td>10 ہفتے</td><td>OPV, Penta, PCV, Rota</td></tr>
+<tr><td>14 ہفتے</td><td>OPV, Penta, PCV, IPV</td></tr>
+<tr><td>9 ماہ</td><td>MR / دیگر مقررہ EPI vaccines</td></tr>
+<tr><td>15 ماہ</td><td>MR / پروگرام کے مطابق booster</td></tr></table>
+<p style="font-size:10px;color:#777">یہ مختصر عوامی reference ہے؛ تازہ سرکاری EPI schedule اور مقامی campaign instructions کو ترجیح دیں۔</p>
+</div></div></div></section>
+
+<section class="green" id="health"><div class="wrap"><div class="title"><span>HEALTH AWARENESS</span><h2>صحت آگاہی</h2><p>روزمرہ صحت کے لیے مفید بنیادی معلومات</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🧼</div><h3>ہاتھوں کی صفائی</h3><p>کھانے سے پہلے اور واش روم کے بعد صابن سے ہاتھ دھونا جراثیم کے پھیلاؤ کو کم کرتا ہے۔</p></div>
+<div class="card"><div class="icon">💧</div><h3>صاف پانی</h3><p>پینے اور کھانے کی تیاری کے لیے محفوظ پانی استعمال کریں۔</p></div>
+<div class="card"><div class="icon">🥦</div><h3>متوازن غذا</h3><p>سبزیاں، پھل، مناسب پروٹین اور پانی صحت مند زندگی میں اہم کردار ادا کرتے ہیں۔</p></div>
+<div class="card"><div class="icon">🤱</div><h3>ماں اور بچے کی نگہداشت</h3><p>حمل کے دوران باقاعدہ checkups اور بچے کی ویکسینیشن کو نظر انداز نہ کریں۔</p></div>
+<div class="card"><div class="icon">🌡️</div><h3>بخار اور بیماری</h3><p>مسلسل یا شدید علامات کی صورت میں خود علاج کے بجائے طبی مشورہ حاصل کریں۔</p></div>
+<div class="card"><div class="icon">🚭</div><h3>تمباکو سے پرہیز</h3><p>تمباکو نوشی اور دھوئیں سے دور رہنا دل، پھیپھڑوں اور مجموعی صحت کے لیے بہتر ہے۔</p></div>
+</div></div></section>
+
+<section id="campaign"><div class="wrap campaign">
+<!-- Embedded SVG campaign poster -->
+<svg viewBox="0 0 600 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vaccination campaign illustration">
+<rect width="600" height="390" rx="24" fill="#e2f4ee"/><circle cx="470" cy="100" r="70" fill="#c2e8dd"/>
+<path d="M100 300h400" stroke="#075b43" stroke-width="12" stroke-linecap="round"/>
+<rect x="105" y="130" width="170" height="130" rx="18" fill="#fff"/><circle cx="190" cy="110" r="35" fill="#f0c6a8"/><path d="M145 245q45-90 90 0" fill="#0b7658"/>
+<circle cx="380" cy="150" r="28" fill="#f0c6a8"/><path d="M345 265q35-90 70 0" fill="#8cc4b4"/>
+<rect x="250" y="55" width="120" height="52" rx="10" fill="#075b43"/><text x="310" y="89" fill="white" font-size="18" text-anchor="middle" font-family="Arial">VACCINATION</text>
+<circle cx="310" cy="190" r="45" fill="#fff"/><path d="M310 165v50M285 190h50" stroke="#c9a227" stroke-width="10" stroke-linecap="round"/>
+<text x="310" y="330" fill="#075b43" font-size="24" text-anchor="middle" font-family="Arial">Every Saturday Campaign</text>
+</svg>
+<div><div class="title" style="text-align:right;margin-bottom:10px"><span>WEEKLY CAMPAIGN</span><h2>ہفتہ وار ویکسینیشن مہم</h2></div><p style="font-size:14px;color:var(--muted)">ہر ہفتہ ہفتہ کو ویکسینیشن مہم کا خصوصی دن رکھا گیا ہے۔ والدین اپنے بچوں کا ویکسینیشن کارڈ ساتھ لائیں اور عملے سے بچے کی due vaccines کے بارے میں معلومات حاصل کریں۔</p><a class="btn" style="background:var(--g);color:white" href="https://wa.me/923369025983?text=Assalam-o-Alaikum%2C%20mujhe%20Vaccination%20Campaign%20ke%20bare%20mein%20maloomat%20chahiye." target="_blank" rel="noopener">Campaign معلومات WhatsApp پر</a></div>
+</div></section>
+
+<section id="gallery" class="green"><div class="wrap"><div class="title"><span>PHOTO GALLERY</span><h2>صحت اور کلینک گیلری</h2><p>Website میں استعمال کے لیے built-in illustrations — اصل تصاویر بعد میں شامل کی جا سکتی ہیں</p></div>
+<div class="gallery">
+<figure><svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="280" fill="#dff3ed"/><rect x="70" y="80" width="360" height="160" fill="#fff"/><path d="M55 85l195-70 195 70" fill="#0b7658"/><rect x="210" y="135" width="80" height="105" fill="#e5f4ef"/><circle cx="250" cy="105" r="22" fill="#c9a227"/><path d="M238 105h24M250 93v24" stroke="#fff" stroke-width="6"/></svg><figcaption>🏥 کلینک</figcaption></figure>
+<figure><svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="280" fill="#e7f5f0"/><circle cx="180" cy="100" r="42" fill="#f0c6a8"/><path d="M110 245q70-135 140 0" fill="#0b7658"/><circle cx="325" cy="120" r="34" fill="#f0c6a8"/><path d="M270 245q55-105 110 0" fill="#8bc3b3"/><rect x="210" y="60" width="80" height="42" rx="8" fill="#fff"/><path d="M250 70v22M239 81h22" stroke="#075b43" stroke-width="7"/></svg><figcaption>👶 ماں اور بچے کی صحت</figcaption></figure>
+<figure><svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="280" fill="#e0f3ed"/><rect x="100" y="55" width="300" height="180" rx="18" fill="#fff"/><path d="M160 170l45-45 35 30 60-70 55 85" fill="none" stroke="#0b7658" stroke-width="12"/><circle cx="370" cy="80" r="18" fill="#c9a227"/></svg><figcaption>🩺 صحت کی خدمات</figcaption></figure>
+</div></div></section>
+
+<section id="faq"><div class="wrap"><div class="title"><span>FREQUENTLY ASKED QUESTIONS</span><h2>اکثر پوچھے جانے والے سوالات</h2></div><div class="faq">
+<details><summary>کلینک کی OPD کب ہوتی ہے؟</summary><p>Monday سے Saturday صبح 8:00 بجے سے دوپہر 2:00 بجے تک۔ Sunday off ہے۔</p></details>
+<details><summary>ویکسینیشن کب ہوتی ہے؟</summary><p>Working days میں vaccination کی سہولت ہے اور ہر Saturday خصوصی Vaccination Campaign رکھی گئی ہے۔</p></details>
+<details><summary>ویکسینیشن کے لیے کیا ساتھ لانا چاہیے؟</summary><p>بچے کا Vaccination Card ساتھ لائیں تاکہ previous doses اور due vaccines کی درست رہنمائی کی جا سکے۔</p></details>
+<details><summary>Online appointment کیسے لیں؟</summary><p>WhatsApp پر 0336-9025983 پر رابطہ کریں۔</p></details>
+<details><summary>کیا اتوار کو کلینک کھلا ہوتا ہے؟</summary><p>نہیں، OPD کے لیے Sunday off ہے۔</p></details>
+<details><summary>Gynae، Ultrasound اور Delivery کے بارے میں معلومات کہاں سے ملیں گی؟</summary><p>تازہ availability اور appointment کے لیے کلینک کے متعلقہ عملے سے رابطہ کریں۔</p></details>
+<details><summary>کیا website پر مریضوں کا CNIC یا due/defaulter list ہوگی؟</summary><p>نہیں۔ Public website پر ذاتی patient data اور due/defaulter lists ظاہر نہیں کی جائیں گی۔</p></details>
+</div></div></section>
+
+<section id="contact" class="green"><div class="wrap"><div class="title"><span>CONTACT US</span><h2>رابطہ اور مقام</h2></div>
+<div class="contact"><div class="contactBox">
+<div class="row">🏥 <b>Clinic:</b> Maryam Nawaz Health Clinic, Toba</div>
+<div class="row">📍 <b>Address:</b> VOP Toba, Tehsil Pind Dadan Khan, District Jhelum</div>
+<div class="row">👨‍⚕️ <b>Dr. Kartic:</b> <a href="tel:03075773355">0307-5773355</a></div>
+<div class="row">💉 <b>Saqib Vaccinator:</b> <a href="tel:03369025983">0336-9025983</a></div>
+<div class="row">🕗 <b>OPD:</b> Monday–Saturday, 8:00 AM–2:00 PM</div>
+<div class="row">📅 <b>Vaccination Campaign:</b> Every Saturday</div>
+</div>
+<div class="map"><div><div style="font-size:48px">📍</div><strong>Maryam Nawaz Health Clinic, Toba</strong><p>VOP Toba, Pind Dadan Khan, Jhelum</p><a href="https://www.google.com/maps/search/?api=1&query=Maryam+Nawaz+Health+Clinic+Toba+Pind+Dadan+Khan+Jhelum">Google Maps پر مقام کھولیں</a></div></div>
+</div></div></section>
+
+<div class="cta"><div class="wrap"><div><h2>Appointment یا ویکسینیشن کی معلومات چاہیے؟</h2><div style="font-size:12px">Saqib Vaccinator: 0336-9025983</div></div><a class="wa" href="https://wa.me/923369025983?text=Assalam-o-Alaikum%2C%20mujhe%20Maryam%20Nawaz%20Health%20Clinic%20Toba%20mein%20appointment%20chahiye." target="_blank" rel="noopener">💬 WhatsApp Appointment</a></div></div>
+</main>
+
+<footer><div class="wrap foot"><div><h3>Maryam Nawaz Health Clinic, Toba</h3><p>عوام کے لیے بنیادی صحت، ویکسینیشن اور صحت آگاہی کا معلوماتی پورٹل۔</p></div><div><h3>Quick Links</h3><ul><li><a href="#services">Health Services</a></li><li><a href="#epi">Vaccination</a></li><li><a href="#faq">FAQs</a></li><li><a href="#contact">Contact</a></li></ul></div><div><h3>Important</h3><p>یہ Public Information Website ہے۔ سرکاری لوگو یا سرکاری حیثیت کا دعویٰ صرف متعلقہ مجاز ادارے کی منظوری کے بعد کیا جائے۔</p></div></div><div class="wrap copy">© 2026 Maryam Nawaz Health Clinic, Toba — Public Information Portal</div></footer>
+<script>document.querySelectorAll('.menu a').forEach(a=>a.onclick=()=>document.querySelector('.menu').classList.remove('open'));</script>
+</body></html>
